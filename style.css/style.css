@@ -56,6 +56,10 @@ button:hover {
   background: var(--a-focus-cl);
   border-radius: 4px;
 }
+.exit:focus,
+.exit:hover {
+  border-radius: 50%;
+}
 footer a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -140,6 +144,8 @@ footer .logo-studio {
   color: var(--hero-cl);
 }
 .h1-button {
+  align-items: center;
+  justify-content: center;
   font-family: var(--hero-font);
   font-weight: 700;
   font-size: 16px;
@@ -680,7 +686,9 @@ img {
 .footer-addres {
   margin-right: 70px;
 }
-
+.footer-soc {
+  margin-right: 93px;
+}
 .footer-soc-icon-link {
   display: flex;
   align-items: center;
@@ -712,4 +720,11 @@ img {
 
 .footer-soc-icon-item:not(:last-child) {
   margin-right: 10px;
+}
+.footer-form {
+}
+
+.button-icon {
+  margin-left: 10px;
+  padding-top: 6px;
 }
