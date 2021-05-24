@@ -59,6 +59,8 @@ button:hover {
 .exit:focus,
 .exit:hover {
   border-radius: 50%;
+  color: #2196f3;
+  background-color: white;
 }
 footer a {
   color: rgba(255, 255, 255, 0.6);
@@ -155,6 +157,13 @@ footer .logo-studio {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .backdrop {
   position: fixed;
@@ -175,6 +184,7 @@ footer .logo-studio {
   transform: translate(-50%, -50%);
   background-color: #fff;
 }
+
 .exit {
   top: 0;
   right: 0;
@@ -365,17 +375,6 @@ img {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
-.h1-button {
-  min-width: 200px;
-  min-height: 50px;
-  display: flex;
-  align-items: center;
-  padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .menu {
   display: inline-flex;
 }
@@ -674,6 +673,7 @@ img {
   color: var(--hero-cl);
 }
 .footer-p {
+  display: block;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
@@ -721,12 +721,21 @@ img {
 .footer-soc-icon-item:not(:last-child) {
   margin-right: 10px;
 }
-.footer-form {
-}
 
 .button-icon {
   margin-left: 10px;
-  padding-top: 6px;
+}
+.form-modal {
+  position: relative;
+  max-width: 528px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .form-title {
   font-family: Roboto;
@@ -736,4 +745,143 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: black;
+  margin-bottom: 12px;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-name {
+  position: relative;
+  margin-bottom: 10px;
+}
+.prob:focus + svg {
+  fill: #2196f3;
+  color: black;
+}
+.prob:focus {
+  border-color: #2196f3;
+}
+.prob {
+  outline: none;
+  padding-left: 42px;
+}
+
+.form-name-position {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-tel {
+  position: relative;
+}
+.form-email {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.icon-form-man {
+  fill: black;
+}
+.icon-form-man {
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+}
+input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+label span {
+  font-size: 12px;
+  line-height: 1.16;
+}
+.form-text {
+  margin-bottom: 20px;
+}
+.form-textarea {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  width: 448px;
+  padding-left: 16px;
+  padding-top: 12px;
+}
+
+.footer-form {
+  display: flex;
+}
+.fotter-button {
+  align-items: center;
+  justify-content: center;
+  font-family: var(--hero-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--hero-cl);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fotter-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+}
+
+.link-policy {
+  color: #2196f3;
+  margin-left: 4px;
+}
+.modal-policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#modal-policy {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+}
+.input-policy::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--heading-text-color);
+  border-radius: 3px;
+  margin-right: 8px;
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

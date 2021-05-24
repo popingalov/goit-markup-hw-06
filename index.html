@@ -31,7 +31,8 @@
                 </ul>
 
             </nav>
-            <a href="mailto:info@devstudio.com" class="telma-item"><svg class="telma-icon" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="telma-item">
+                <svg class="telma-icon" width="16" height="12">
                     <use href="./icons/symbol-defs.svg#icon-envelope"></use>
                 </svg> info@devstudio.com</a>
             <a href="tel:+380961111111" class="telma-item"><svg class="telma-icon" width="10" height="16">
@@ -41,29 +42,40 @@
     </header>
     <main>
         <div data-modal class="backdrop is-hidden">
-            <div class="modal">
-                <form>
+            <div class="form-modal">
+                <form class="form">
                     <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-                    <label for="form-name">Имя
-                        <input type="text" id="form-name">
+                    <label for="form-name" class="form-name">
+                        <span class="form-name-position">Имя</span>
+                        <input type="text" id="form-name" class="prob">
+                        <svg class="icon-form-man" width="12" height="12">
+                            <use href="./icons/symbol-defs.svg#icon-form-man"></use>
+                        </svg>
                     </label>
-                    <label for="form=tel">
-                        Телефон
-                        <input type="tel" id="form-tel">
+                    <label for="form-tel" class="form-tel">
+                        <span class="form-name-position">Телефон</span>
+                        <input type="tel" id="form-tel" class="prob">
+                        <svg class="icon-form-man" width="13" height="13">
+                            <use href="./icons/symbol-defs.svg#icon-form-tel"></use>
+                        </svg>
                     </label>
-                    <label for="form-email">
+                    <label for="form-email" class="form-email">
                         Почта
-                        <input type="email" autocomplete="on" id="form-email">
+                        <input type="email" autocomplete="on" id="form-email" class="prob">
+                        <svg class="icon-form-man" width="15" height="12">
+                            <use href="./icons/symbol-defs.svg#icon-form-email"></use>
+                        </svg>
                     </label>
-                    <label for="form-text">
-                        Комментарий
-                        <textarea name="coment" id="form-text" placeholder="Введите текст" cols="30"
-                            rows="10"></textarea>
+                    <label for="form-text" class="form-text">
+                        <span class="form-name-position">Комментарий</span>
+                        <textarea name="coment" id="form-text" placeholder="Введите текст" cols="30" rows="10"
+                            class="form-textarea prob"></textarea>
+
                     </label>
-                    <label for="modal-policy">
-                        <input type="checkbox" id="modal-policy">
+                    <label for="modal-policy" class="modal-policy">
+                        <input type="checkbox" id="modal-policy" class="input-policy">
                         Соглашаюсь с рассылкой и принимаю
-                        <a href="">Условия договора</a>
+                        <a href="#" class="link-policy">Условия договора</a>
                     </label>
                     <button type="submit" class="h1-button h1-text">
                         Отправить
@@ -371,16 +383,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-form">
+            <div>
+
                 <p class="footer-p">Подпишитесь на рассылку</p>
-                <button type="button" class="h1-button h1-text">
-                    Подписаться
-                    <svg width="24px" height="30px" class="button-icon">
-                        <use href="./icons/symbol-defs.svg#icon-telegram"></use>
-                    </svg>
-                </button>
-
-
+                <div class="footer-form">
+                    <input type="email" placeholder="E-mail" class="fotter-input">
+                    <button type="submit" class="h1-text fotter-button">
+                        Подписаться
+                        <svg width="24px" height="24px" class="button-icon">
+                            <use href="./icons/symbol-defs.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>
