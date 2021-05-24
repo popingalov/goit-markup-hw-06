@@ -42,15 +42,41 @@
     <main>
         <div data-modal class="backdrop is-hidden">
             <div class="modal">
+                <form>
+                    <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <label for="form-name">Имя
+                        <input type="text" id="form-name">
+                    </label>
+                    <label for="form=tel">
+                        Телефон
+                        <input type="tel" id="form-tel">
+                    </label>
+                    <label for="form-email">
+                        Почта
+                        <input type="email" autocomplete="on" id="form-email">
+                    </label>
+                    <label for="form-text">
+                        Комментарий
+                        <textarea name="coment" id="form-text" placeholder="Введите текст" cols="30"
+                            rows="10"></textarea>
+                    </label>
+                    <label for="modal-policy">
+                        <input type="checkbox" id="modal-policy">
+                        Соглашаюсь с рассылкой и принимаю
+                        <a href="">Условия договора</a>
+                    </label>
+                    <button type="submit" class="h1-button h1-text">
+                        Отправить
+                    </button>
+                </form>
                 <button data-modal-close type="button" class="exit">X</button>
             </div>
         </div>
         <section class="hero-section hero-bg">
             <div class="section">
                 <h1 class="h1">Эффективные решения для вашего бизнеса</h1>
-                <button data-modal-open type="button" class="h1-button">
-                    <div class="h1-text">Заказать услугу </div>
-
+                <button data-modal-open type="button" class="h1-button h1-text">
+                    Заказать услугу
                 </button>
             </div>
         </section>
@@ -169,7 +195,7 @@
                             <p lang="en" class="team-p">Frontend Developer</p>
                             <ul class="soc-list">
                                 <li class="soc-icon-item">
-                                    <a href="#" class="soc-icon-link rel=" noreferrer noopener""><svg class="soc-icon"
+                                    <a href="#" class="soc-icon-link" rel=" noreferrer noopener"><svg class="soc-icon"
                                             width="20px" height="20px">
                                             <use href="./icons/symbol-defs.svg#icon-instagram-2-1"></use>
                                         </svg></a>
@@ -306,7 +332,7 @@
 
                 <address>
                     <a href="https://goo.gl/maps/wHTxwDvzceps6cKY9" target="_blank" rel="noreferrer noopener"
-                        class="addres" rel="noreferrer noopener">г.Киев,пр-т
+                        class="addres">г.Киев,пр-т
                         Леси Украинки, 26
                     </a>
                 </address>
@@ -347,8 +373,8 @@
             </div>
             <div class="footer-form">
                 <p class="footer-p">Подпишитесь на рассылку</p>
-                <button type="button" class="h1-button">
-                    <div class="h1-text">Подписаться</div>
+                <button type="button" class="h1-button h1-text">
+                    Подписаться
                     <svg width="24px" height="30px" class="button-icon">
                         <use href="./icons/symbol-defs.svg#icon-telegram"></use>
                     </svg>
